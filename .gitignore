@@ -1,52 +1,60 @@
-# Prerequisites
-*.d
-
-# Object files
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git-ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
+*.o.*
 *.a
-*.la
-*.lo
+*.lst
+*.elf
+*.bin
+*/*/*/*/*/settings/
+*/*/*/*/*/debug/
+*/*/*/*/*/release/
+*/*/*/*/*/sdram_debug/
+*/*/*/*/*/sdram_release/
+*/*/*/*/*/flexram_sdram_debug/
+*/*/*/*/*/flexram_sdram_release/
+*/*/*/*/*/flexspi_nor_debug/
+*/*/*/*/*/flexspi_nor_release/
+*/*/*/*/*/flexspinor_sdram_debug/
+*/*/*/*/*/flexspinor_sdram_release/
+*/*/*/*/*/flexspinor_flexram_sdram_debug/
+*/*/*/*/*/flexspinor_flexram_sdram_release/
+*/*/*/*/*/sdram_flexram_debug/
+*/*/*/*/*/sdram_flexram_release/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+*/*/*/*/*/*/settings/
+*/*/*/*/*/*/debug/
+*/*/*/*/*/*/release/
+*/*/*/*/*/*/sdram_debug/
+*/*/*/*/*/*/sdram_release/
+*/*/*/*/*/*/flexram_sdram_debug/
+*/*/*/*/*/*/flexram_sdram_release/
+*/*/*/*/*/*/flexspi_nor_debug/
+*/*/*/*/*/*/flexspi_nor_release/
+*/*/*/*/*/*/flexspinor_sdram_debug/
+*/*/*/*/*/*/flexspinor_sdram_release/
+*/*/*/*/*/*/flexspinor_flexram_sdram_debug/
+*/*/*/*/*/*/flexspinor_flexram_sdram_release/
+*/*/*/*/*/*/sdram_flexram_debug/
+*/*/*/*/*/*/sdram_flexram_release/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# IAR temp files
+EW*.tmp
+EW*.tmp.c
+*.dep
+*.ewt
+*.pbi
+*.pbi.cout
+*.pbd
+*.pbd.browse
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
